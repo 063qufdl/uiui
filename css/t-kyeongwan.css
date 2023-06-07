@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+*,*::after,*::before{box-sizing:border-box;}
+a{text-decoration: none;font-style: none;}
+
+
+html, body {width:100%;height:100%;}
+header{width:100%;height: 70px;position: fixed;
+left: 0; top: 0px; text-align: center;background: #fff;z-index: 9999;}
+#t-my {position:absolute;right: 15px;top: 13px;}
+.logo{margin-top: 5px;}
+
+
+
+/*메뉴시작*/
+
+    #t-menu-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%; 
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999999;} 
+
+
+/*메뉴*/
+
+a { text-decoration: none; color: #000;}
+
+#t-menu-wrapper {     cursor: pointer;   }
+
+ #t-hamburger-menu{
+    position: absolute;
+    width: 25px;
+    height: 20px; cursor: pointer;
+    left: 18px;    top: 27px;
+    z-index: 999999;
+    } 
+
+#t-hamburger-menu span{
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+    }
+
+#t-hamburger-menu span:nth-child(1) {    top: 0;  }
+#t-hamburger-menu span:nth-child(2) {    top: 9px;  }
+#t-hamburger-menu span:nth-child(3) {     top: 18px;  }
+
+.menu{
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+.menu>li{
+    text-align: right; 
+    line-height:3rem;
+    background:#fff
+}
+
+
+
+.menu > li:hover .submenu{
+     width:100%;  
+     height: 100%;
+    transition-duration:1s;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.cross{
+    background: none;
+    position: absolute;
+    left: 3px; top: 20px;
+    color: #111; border: 0;
+    font-size: 3.5em;
+    line-height: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 100000;
+}
+
+
+/*메뉴끝*/
+
+
+
+
+
+
+#t-mmain{width: 100%; }
+#t-mmain img{width: 100%;height: 300%;}
+
+
+
+/*예약*/
+
+#t-reservation{width: 100%; background: #ccc;height: 90px;}
+ 
+ #t-reservation form{width:90%;display: flex;align-items: center;line-height: 37px;justify-content: space-between;margin: 0 auto;top: 3px;}
+
+ #t-reservation .CheckIn, .CheckOut {background: none; border:none; font-size:1.5em;height: 37px;color: #fff;text-align: center;} 
+
+
+ #t-reservation #t-box1{/*/display:inline-block;*/background: #666; height: 80px;color: #fff;width: 30%;border-radius: 10px;text-align: center;margin-top: 5px;border:2px solid #fff;margin-right: 7px ;}
+
+ #t-reservation .box1{color: #fff;background: none; border: none; ;font-family: "Montserrat", sans-serif;font-size: 1.2em;
+    text-align: center;width: 77%;
+}
+
+
+ #t-reservation #t-box2{display: inline-block;background: #666; height: 80px;color: #fff;width: 30%;border-radius: 10px;text-align: center;border:2px solid #fff;margin-right: 7px}
+
+#t-reservation .box2{color: #fff;background: none; border: none; font-family: "Montserrat", sans-serif;} 
+
+.t-box6{display: inline-block;width: 30%;}
+.t-box6 p{color:#515861; font-size:1.5em;height: 37px; font-weight:bold; margin-bottom:5px;font-family: "Montserrat", sans-serif;}
+.minus{width:30%; height:80px; appearance:none; border-radius:5px 0 0 5px; background:#666; color:#fff; font-size:1.5em; font-weight:bold; border: 2px solid #fff; border-right: none;}
+
+.plus{width:30%; height:80px; appearance:none; border-radius:0 5px 5px 0; background:#666; color:#fff; font-size:0.9rem; font-weight:bold;  border: 2px solid #fff; border-right: none;}
+
+.mpbox{width:30%; height:80px; text-align:center; font-size:1.5em;border: 2px solid #fff; border-right: none;border-left: none;}
+.box6 input{float:left; display:block;}
+
+button{width:30%; height:80px; appearance:none;border: 2px solid#fff; border-radius:5px; background:#666; color:#fff; font-size:1.5em; font-weight:bold;font-family: "Montserrat", sans-serif;letter-spacing: 5px;} 
+
+
+#t-two{width:100%; height: 1600px;}
+
+
+
+#t-text1{color: #db8e2b;font-size: 2rem; text-align: center; margin-top: 100px; font-family: "Montserrat", sans-serif;}
+#t-text2{font-size: 3.2rem; text-align: center;margin-top: 30px; font-weight: bold; font-family: "Montserrat", sans-serif;}
+#t-text3{text-align: center; font-size: 1.5rem;margin-top: 30px;;}
+
+
+#t-show{width: 90%; margin:0 auto; text-align: center;margin-top: 150px;}
+.t-imgbox img{width: 100%;} 
+
+
+
+#t-three{text-align: center;position: relative;height: 1200px;display: block;}
+#t-event{position: relative;width: 95%;height:100px; left:50%;transform: translate(-50%); }
+#t-event img{height: 450px;left: 0; position: absolute;width: 70%;}
+
+#t-backcover{width: 50%; height: 580px; background: #102c4f;top
+:115%;z-index: 999;right: 0;position: absolute;
+animation-name: move, fadeInLeft;
+      animation-duration: 5s;
+      /* animation-iteration-count: infinite;} */}
+
+#t-cover{width: 90%; height: 520px; border: 1px solid #fff;margin:27px auto;text-align: center;}
+#t-cover li{color: #fff; margin-top: 30px; font-size: 2em;}
+#t-cover li a{color: #fff;font-size: 120%;font-family: "Montserrat", sans-serif;}
+
+#t-event #t-magic{width:45%;height:300px; z-index: 9999; top:535px; left: 0px;animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;}  
+
+
+.animated{animation-duration:1s;}
+
+.fadeInLeft{animation-name:fadeInLeft;}
+@keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform:translateX(-20px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.delay-05s{animation-delay:0.5s}
+.delay-2s{animation-delay:1s}
+
+#magic{visibility: hidden;}
+.fadeIn{visibility: visible;}
+
+
+
+/*마지막*/
+#new #title{position:relative;width: 100%; height:500px; background: #102c4f; color:#fff; font-size: 2rem; font-family: "Montserrat", sans-serif;text-align: center; padding-top: 15px;top:150px;display:block;}
+
+
+.container {
+    margin-top: -65px;
+}
+.item img{width: 100%;height: 330px;}
+.item ul li a span{color:#fff; font-size: 2.6rem; font-family: "Montserrat", sans-serif;text-align: center;}
+
+
+
+footer{border-top:1px solid #000; display:block;margin-top:200px}
+#right h3 {text-align:center; font-weight:bold;font-size: 1.5rem;margin:15px}
+
+#left h3 {text-align:center; font-weight:bold;font-size: 1rem;margin:15px}
+
+
+footer section{display:flex;flex-wrap:wrap;}
+/* section #right h3{border-bottom: 1px solid #000;} */
+
+section #left{left:5px;width: 50%;}
+section #left p {padding:0 0 3px 15px;}
+section #left img{margin-top: 15px;}
+section #left #by{margin-left: 15px;}
+section #left p img{margin-top: 0; }
+
+section #right{width:50%;text-align: center;}
+
+#right ul li a{color: #000;}
+#right ul li{height: 25px;}
+#right #right1{float: left;width:45%;margin-top: 15px;}
+
+#right #right2{width:45%;float: left;margin-top: 15px;}
+section #right #last{width:90%;text-align:left;clear: both;margin-top: 20px;}
+section #right #last p{margin-top: 10px;}
+
+
+/*모바일 끝!!!*/
+
+
+/*테블릿 시작641~800*/
+
+@media screen and (min-width:799px){
+   
+
+}
+
